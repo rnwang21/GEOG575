@@ -1,5 +1,4 @@
 // Data: an array of cities
-
 var cityPop = [
 	{ 
 		city: 'Madison',
@@ -102,6 +101,38 @@ function addEvents(){
   });
 }
 
-createTable(cityPop);
-addColumns(cityPop);
-addEvents();
+// Called after GeoJSON is fetched & parsed
+function debugCallback(myData){
+	// display the loaded GeoJSON data
+	document.querySelector("#mydiv").insertAdjacentHTML(
+		'beforeend',
+		'<br>GeoJSON data:<br>' + JSON.stringify(myData)
+	);
+};
+
+function debugAjax(){
+	
+	fetch("data/MegaCities.geojson")
+		.then(function(response){
+			// convert the HTTP response into JSON
+			return response.json();
+		})
+		.then(function(myData){
+			// pass the actual data to the callback
+			debugCallback(myData);
+		}).catch(function(err){
+			console.log("GeoJSON fetch error:", err);
+			document.querySelector("#mydiv").insertAdjacentHTML(
+				"beforeend",
+				"<br><strong>ERROR:</strong> " + err
+			);
+		});
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+	createTable(cityPop);
+	addColumns(cityPop);
+	addEvents();
+  
+	debugAjax();
+  });
