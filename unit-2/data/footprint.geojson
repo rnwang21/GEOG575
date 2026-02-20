@@ -1,0 +1,2105 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406085,
+          43.073464
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T16:51:37+00:00",
+        "locType": 1.0,
+        "heading": 347.357269,
+        "accuracy": 3.415577,
+        "speed": 0.751789,
+        "distance": 30.443286,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 271.459878
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406103,
+          43.073755
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T16:51:58+00:00",
+        "locType": 1.0,
+        "heading": 355.902954,
+        "accuracy": 4.3775,
+        "speed": 0.947287,
+        "distance": 32.363008,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 272.99994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406079,
+          43.07403
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T16:52:18+00:00",
+        "locType": 1.0,
+        "heading": 331.095398,
+        "accuracy": 5.029426,
+        "speed": 0.844605,
+        "distance": 30.614674,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 272.931547
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406099,
+          43.074331
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T16:52:40+00:00",
+        "locType": 1.0,
+        "heading": 351.486206,
+        "accuracy": 4.955508,
+        "speed": 1.181559,
+        "distance": 33.480429,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 273.107615
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406102,
+          43.074621
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T16:53:03+00:00",
+        "locType": 1.0,
+        "heading": 89.383377,
+        "accuracy": 9.922977,
+        "speed": 0.592425,
+        "distance": 32.219614,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 272.025734
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406177,
+          43.074729
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T16:58:07+00:00",
+        "locType": 1.0,
+        "heading": 159.612457,
+        "accuracy": 14.245955,
+        "speed": 0.313979,
+        "distance": 13.464128,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 272.73047
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.404992,
+          43.073921
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:18:55+00:00",
+        "locType": 1.0,
+        "heading": 95.886429,
+        "accuracy": 47.997479,
+        "speed": 3.313324,
+        "distance": 131.809171,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 354.463377
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.405113,
+          43.074255
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:19:10+00:00",
+        "locType": 1.0,
+        "heading": 108.282867,
+        "accuracy": 14.245955,
+        "speed": 0.958204,
+        "distance": 38.39369,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 275.081159
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.404791,
+          43.074238
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:19:36+00:00",
+        "locType": 1.0,
+        "heading": 108.282867,
+        "accuracy": 14.245955,
+        "speed": 0.471533,
+        "distance": 26.293958,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 275.432763
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.404595,
+          43.074008
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:20:33+00:00",
+        "locType": 1.0,
+        "heading": 93.784729,
+        "accuracy": 14.245954,
+        "speed": 1.071449,
+        "distance": 30.129433,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 275.699588
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4043,
+          43.073861
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:20:57+00:00",
+        "locType": 1.0,
+        "heading": 113.661171,
+        "accuracy": 14.245955,
+        "speed": 0.899996,
+        "distance": 29.051923,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 274.081526
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40392,
+          43.073792
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:21:24+00:00",
+        "locType": 1.0,
+        "heading": 92.608521,
+        "accuracy": 14.245955,
+        "speed": 1.103641,
+        "distance": 31.885206,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 276.274153
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.403518,
+          43.073815
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:21:51+00:00",
+        "locType": 1.0,
+        "heading": 112.191574,
+        "accuracy": 14.245955,
+        "speed": 1.290126,
+        "distance": 32.841391,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 276.830585
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.403103,
+          43.073831
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:22:18+00:00",
+        "locType": 1.0,
+        "heading": 63.944584,
+        "accuracy": 14.245955,
+        "speed": 1.332748,
+        "distance": 33.847361,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 277.943503
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.402759,
+          43.073853
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:22:42+00:00",
+        "locType": 1.0,
+        "heading": 36.214653,
+        "accuracy": 14.245955,
+        "speed": 0.733928,
+        "distance": 28.124299,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 277.546506
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.402526,
+          43.074059
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:23:07+00:00",
+        "locType": 1.0,
+        "heading": 47.714043,
+        "accuracy": 14.245955,
+        "speed": 0.894709,
+        "distance": 29.730834,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 277.422572
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.402151,
+          43.074133
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:23:31+00:00",
+        "locType": 1.0,
+        "heading": 88.74855,
+        "accuracy": 14.245955,
+        "speed": 1.073671,
+        "distance": 31.629891,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 275.966708
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401761,
+          43.074171
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:23:56+00:00",
+        "locType": 1.0,
+        "heading": 63.74477,
+        "accuracy": 14.245955,
+        "speed": 1.128155,
+        "distance": 32.043777,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 272.342352
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401368,
+          43.07421
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:24:20+00:00",
+        "locType": 1.0,
+        "heading": 86.373505,
+        "accuracy": 14.245955,
+        "speed": 1.249926,
+        "distance": 32.300704,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.535968
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401035,
+          43.074336
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:24:46+00:00",
+        "locType": 1.0,
+        "heading": 86.800125,
+        "accuracy": 14.245955,
+        "speed": 1.091691,
+        "distance": 30.521401,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 267.785086
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400753,
+          43.074515
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:25:20+00:00",
+        "locType": 1.0,
+        "heading": 331.227386,
+        "accuracy": 7.397371,
+        "speed": 1.080029,
+        "distance": 30.381159,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 266.340279
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400718,
+          43.074785
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:25:44+00:00",
+        "locType": 1.0,
+        "heading": 311.369293,
+        "accuracy": 5.402146,
+        "speed": 1.022628,
+        "distance": 30.131831,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 267.961335
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400697,
+          43.075049
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:26:07+00:00",
+        "locType": 1.0,
+        "heading": 333.777405,
+        "accuracy": 3.910581,
+        "speed": 0.907435,
+        "distance": 29.379926,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.317854
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400704,
+          43.075335
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:26:31+00:00",
+        "locType": 1.0,
+        "heading": 346.62677,
+        "accuracy": 3.621657,
+        "speed": 1.131157,
+        "distance": 31.779388,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.207596
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4007,
+          43.075645
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:26:57+00:00",
+        "locType": 1.0,
+        "heading": 17.229851,
+        "accuracy": 3.407057,
+        "speed": 1.455597,
+        "distance": 34.442186,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.214741
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400902,
+          43.075845
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:27:40+00:00",
+        "locType": 1.0,
+        "heading": 294.86908,
+        "accuracy": 3.154363,
+        "speed": 0.657134,
+        "distance": 27.647753,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 271.807215
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40074,
+          43.076113
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:29:18+00:00",
+        "locType": 1.0,
+        "heading": 119.249031,
+        "accuracy": 7.420729,
+        "speed": 0.909802,
+        "distance": 32.56708,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.500955
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401055,
+          43.07601
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:29:49+00:00",
+        "locType": 1.0,
+        "heading": 134.041016,
+        "accuracy": 8.809997,
+        "speed": 0.729118,
+        "distance": 28.092189,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 271.369092
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400926,
+          43.075754
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:30:22+00:00",
+        "locType": 1.0,
+        "heading": 284.704193,
+        "accuracy": 17.192916,
+        "speed": 0.355128,
+        "distance": 30.319949,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 270.892982
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40134,
+          43.075751
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:30:58+00:00",
+        "locType": 1.0,
+        "heading": 133.02301,
+        "accuracy": 21.829328,
+        "speed": 1.142195,
+        "distance": 33.720822,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 273.046082
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401004,
+          43.075907
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:31:54+00:00",
+        "locType": 1.0,
+        "heading": 260.324677,
+        "accuracy": 28.950691,
+        "speed": 0.725304,
+        "distance": 32.392785,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 273.199393
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401488,
+          43.075983
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:34:16+00:00",
+        "locType": 1.0,
+        "heading": 62.099949,
+        "accuracy": 16.467136,
+        "speed": 2.895312,
+        "distance": 40.314621,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 274.742083
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401183,
+          43.075862
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:38:09+00:00",
+        "locType": 1.0,
+        "heading": 190.950592,
+        "accuracy": 7.057445,
+        "speed": 0.77702,
+        "distance": 28.245532,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 272.8224
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400831,
+          43.075954
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:51:35+00:00",
+        "locType": 1.0,
+        "heading": 109.388283,
+        "accuracy": 28.702357,
+        "speed": 1.009819,
+        "distance": 30.436949,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 270.97336
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401114,
+          43.075853
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T18:59:34+00:00",
+        "locType": 1.0,
+        "heading": 206.436508,
+        "accuracy": 22.198526,
+        "speed": 0.340897,
+        "distance": 25.635791,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 272.553918
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400923,
+          43.076214
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T19:06:05+00:00",
+        "locType": 1.0,
+        "heading": 116.758873,
+        "accuracy": 15.650587,
+        "speed": 3.250787,
+        "distance": 43.018027,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 271.769353
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401106,
+          43.075871
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T19:07:25+00:00",
+        "locType": 1.0,
+        "heading": 116.758873,
+        "accuracy": 14.245955,
+        "speed": 1.343383,
+        "distance": 40.918122,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 272.734394
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400585,
+          43.075946
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T19:11:34+00:00",
+        "locType": 1.0,
+        "heading": 116.758873,
+        "accuracy": 14.245955,
+        "speed": 2.506377,
+        "distance": 43.244377,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.959816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400641,
+          43.075839
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T19:48:31+00:00",
+        "locType": 1.0,
+        "heading": 82.18499,
+        "accuracy": 14.245955,
+        "speed": 0.42699,
+        "distance": 12.732545,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.639343
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401095,
+          43.075833
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T19:50:35+00:00",
+        "locType": 1.0,
+        "heading": 83.349716,
+        "accuracy": 14.245955,
+        "speed": 0.60176,
+        "distance": 36.983067,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 271.773906
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400768,
+          43.075808
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:13:01+00:00",
+        "locType": 1.0,
+        "heading": 101.59832,
+        "accuracy": 14.245954,
+        "speed": 0.659432,
+        "distance": 26.777688,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.416926
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400745,
+          43.075511
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:13:29+00:00",
+        "locType": 1.0,
+        "heading": 203.567581,
+        "accuracy": 14.245955,
+        "speed": 1.495553,
+        "distance": 33.049493,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.987194
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400762,
+          43.075222
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:13:52+00:00",
+        "locType": 1.0,
+        "heading": 182.420273,
+        "accuracy": 14.245955,
+        "speed": 1.280943,
+        "distance": 32.137413,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.452161
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400771,
+          43.074905
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:14:17+00:00",
+        "locType": 1.0,
+        "heading": 203.337906,
+        "accuracy": 14.245955,
+        "speed": 1.480231,
+        "distance": 35.225962,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 266.978115
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400776,
+          43.074599
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:14:41+00:00",
+        "locType": 1.0,
+        "heading": 183.147766,
+        "accuracy": 14.245955,
+        "speed": 1.481689,
+        "distance": 33.998681,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 267.474176
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400778,
+          43.074297
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:15:06+00:00",
+        "locType": 1.0,
+        "heading": 183.488159,
+        "accuracy": 8.736586,
+        "speed": 1.425991,
+        "distance": 33.55224,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 266.095271
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400789,
+          43.073991
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:15:30+00:00",
+        "locType": 1.0,
+        "heading": 183.488159,
+        "accuracy": 4.553259,
+        "speed": 1.476024,
+        "distance": 34.008041,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 266.755282
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400794,
+          43.073682
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:15:54+00:00",
+        "locType": 1.0,
+        "heading": 183.488159,
+        "accuracy": 4.389926,
+        "speed": 1.466403,
+        "distance": 34.331954,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 267.526623
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400835,
+          43.073399
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:16:19+00:00",
+        "locType": 1.0,
+        "heading": 224.16922,
+        "accuracy": 3.324493,
+        "speed": 0.952283,
+        "distance": 31.617804,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 265.815072
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401129,
+          43.07319
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:17:40+00:00",
+        "locType": 1.0,
+        "heading": 294.577789,
+        "accuracy": 4.087949,
+        "speed": 1.578968,
+        "distance": 33.354733,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 266.431369
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40154,
+          43.073176
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:18:05+00:00",
+        "locType": 1.0,
+        "heading": 274.486328,
+        "accuracy": 3.35613,
+        "speed": 1.526898,
+        "distance": 33.510924,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 267.979121
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40186,
+          43.073043
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:18:32+00:00",
+        "locType": 1.0,
+        "heading": 192.930618,
+        "accuracy": 3.849529,
+        "speed": 0.968961,
+        "distance": 29.960317,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.339396
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.402244,
+          43.072586
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T20:22:19+00:00",
+        "locType": 1.0,
+        "heading": 76.018661,
+        "accuracy": 14.84249,
+        "speed": 2.029255,
+        "distance": 59.632115,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 273.709583
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401611,
+          43.074512
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:49:13+00:00",
+        "locType": 1.0,
+        "heading": 329.530731,
+        "accuracy": 90.754794,
+        "speed": 60.161537,
+        "distance": 220.10043,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 298.997126
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401569,
+          43.073776
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:49:16+00:00",
+        "locType": 1.0,
+        "heading": 6.388361,
+        "accuracy": 44.177325,
+        "speed": 2.912387,
+        "distance": 81.840599,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 287.852926
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.401692,
+          43.073393
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:49:18+00:00",
+        "locType": 1.0,
+        "heading": 6.388361,
+        "accuracy": 23.220315,
+        "speed": 2.741169,
+        "distance": 43.714325,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.980264
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.402019,
+          43.073179
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:49:22+00:00",
+        "locType": 1.0,
+        "heading": 6.388361,
+        "accuracy": 13.931473,
+        "speed": 1.429235,
+        "distance": 35.70137,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.182455
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40245,
+          43.073215
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:49:45+00:00",
+        "locType": 1.0,
+        "heading": 6.388361,
+        "accuracy": 14.245955,
+        "speed": 1.565096,
+        "distance": 35.33087,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.483669
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40285,
+          43.073221
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:50:07+00:00",
+        "locType": 1.0,
+        "heading": 6.388361,
+        "accuracy": 14.245955,
+        "speed": 1.372136,
+        "distance": 32.585716,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.044304
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.403263,
+          43.073227
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:50:30+00:00",
+        "locType": 1.0,
+        "heading": 273.887451,
+        "accuracy": 14.245955,
+        "speed": 1.554218,
+        "distance": 33.64432,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 270.176295
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.403684,
+          43.073233
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:50:53+00:00",
+        "locType": 1.0,
+        "heading": 273.887451,
+        "accuracy": 14.245955,
+        "speed": 1.528227,
+        "distance": 34.295775,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 270.235798
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.404084,
+          43.073238
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:51:16+00:00",
+        "locType": 1.0,
+        "heading": 213.524353,
+        "accuracy": 14.245955,
+        "speed": 1.432933,
+        "distance": 32.583637,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.193976
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4045,
+          43.073244
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:51:39+00:00",
+        "locType": 1.0,
+        "heading": 275.565399,
+        "accuracy": 14.245955,
+        "speed": 1.549265,
+        "distance": 33.888615,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 270.67068
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.404891,
+          43.073248
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:52:01+00:00",
+        "locType": 1.0,
+        "heading": 255.300003,
+        "accuracy": 14.245955,
+        "speed": 1.218441,
+        "distance": 31.848984,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 271.54417
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.405327,
+          43.073215
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:52:26+00:00",
+        "locType": 1.0,
+        "heading": 193.787689,
+        "accuracy": 14.245955,
+        "speed": 1.494869,
+        "distance": 35.699766,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 270.395163
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.405768,
+          43.073225
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:52:49+00:00",
+        "locType": 1.0,
+        "heading": 262.196564,
+        "accuracy": 14.245955,
+        "speed": 1.480802,
+        "distance": 35.935417,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.963764
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406161,
+          43.073219
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:53:30+00:00",
+        "locType": 1.0,
+        "heading": 246.085098,
+        "accuracy": 14.245955,
+        "speed": 1.335576,
+        "distance": 32.015707,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.696713
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406523,
+          43.073138
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:54:05+00:00",
+        "locType": 1.0,
+        "heading": 226.282181,
+        "accuracy": 14.888956,
+        "speed": 1.009022,
+        "distance": 30.826654,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.801482
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.407049,
+          43.073009
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T21:57:44+00:00",
+        "locType": 1.0,
+        "heading": 284.954926,
+        "accuracy": 17.072708,
+        "speed": 2.393856,
+        "distance": 45.174998,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 295.92083
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406311,
+          43.073181
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:11:57+00:00",
+        "locType": 1.0,
+        "heading": 346.176849,
+        "accuracy": 10.319387,
+        "speed": 0.481495,
+        "distance": 63.072581,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.027755
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40635,
+          43.073482
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:12:22+00:00",
+        "locType": 1.0,
+        "heading": 297.273102,
+        "accuracy": 14.857147,
+        "speed": 1.470443,
+        "distance": 33.591276,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 267.848525
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406346,
+          43.073781
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:12:52+00:00",
+        "locType": 1.0,
+        "heading": 316.778839,
+        "accuracy": 14.37714,
+        "speed": 1.49115,
+        "distance": 33.220153,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.734536
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.406192,
+          43.073629
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:28:52+00:00",
+        "locType": 1.0,
+        "heading": 275.521515,
+        "accuracy": 18.577655,
+        "speed": 3.572909,
+        "distance": 21.035575,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.419961
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.405949,
+          43.073239
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:30:09+00:00",
+        "locType": 1.0,
+        "heading": 148.766495,
+        "accuracy": 14.245955,
+        "speed": 4.840346,
+        "distance": 47.634805,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.304562
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40578,
+          43.072653
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:30:16+00:00",
+        "locType": 1.0,
+        "heading": 148.766495,
+        "accuracy": 14.245955,
+        "speed": 8.611291,
+        "distance": 66.543115,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 269.03051
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.405755,
+          43.072213
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:30:23+00:00",
+        "locType": 1.0,
+        "heading": 148.766495,
+        "accuracy": 16.029396,
+        "speed": 0.984488,
+        "distance": 48.925886,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.555405
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.404918,
+          43.072006
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:31:00+00:00",
+        "locType": 1.0,
+        "heading": 114.705879,
+        "accuracy": 15.119617,
+        "speed": 9.110734,
+        "distance": 71.945911,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 267.649871
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.404123,
+          43.072112
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:31:06+00:00",
+        "locType": 1.0,
+        "heading": 92.15937,
+        "accuracy": 14.276924,
+        "speed": 10.410754,
+        "distance": 65.812737,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 264.355219
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.403512,
+          43.072102
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:31:13+00:00",
+        "locType": 1.0,
+        "heading": 92.15937,
+        "accuracy": 14.247289,
+        "speed": 4.124878,
+        "distance": 49.776627,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 263.531116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.403149,
+          43.072162
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:32:36+00:00",
+        "locType": 1.0,
+        "heading": 41.810379,
+        "accuracy": 14.611969,
+        "speed": 0.979656,
+        "distance": 30.307477,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 264.812538
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.402513,
+          43.072083
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:32:56+00:00",
+        "locType": 1.0,
+        "heading": 61.950439,
+        "accuracy": 14.245955,
+        "speed": 5.224749,
+        "distance": 52.538704,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 265.453124
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.40172,
+          43.072061
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:33:03+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 14.245954,
+        "speed": 9.415004,
+        "distance": 64.633873,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 268.117102
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400866,
+          43.072062
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:33:10+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 14.245955,
+        "speed": 9.766115,
+        "distance": 69.55602,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 267.004163
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.400007,
+          43.072048
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:33:16+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 8.900946,
+        "speed": 11.074869,
+        "distance": 69.980441,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 265.625616
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.399019,
+          43.072032
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:33:21+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 12.043435,
+        "speed": 12.672179,
+        "distance": 80.489466,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 265.491375
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.398307,
+          43.072071
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:33:27+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 14.005347,
+        "speed": 7.482877,
+        "distance": 58.152036,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 262.593105
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.397854,
+          43.072022
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:34:09+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 8.912507,
+        "speed": 1.924164,
+        "distance": 37.295013,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 262.03955
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.397046,
+          43.072008
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:34:35+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 4.068202,
+        "speed": 10.09741,
+        "distance": 65.827677,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 261.519134
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.396093,
+          43.071994
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:34:43+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 3.122902,
+        "speed": 10.01895,
+        "distance": 77.634709,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 260.35326
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.395549,
+          43.071987
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:34:51+00:00",
+        "locType": 1.0,
+        "heading": 85.653748,
+        "accuracy": 2.442449,
+        "speed": 0.49233,
+        "distance": 44.314064,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 259.968156
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.394826,
+          43.071972
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:35:23+00:00",
+        "locType": 1.0,
+        "heading": 86.354393,
+        "accuracy": 4.797065,
+        "speed": 9.077686,
+        "distance": 58.909852,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 260.175173
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.394069,
+          43.071996
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:35:29+00:00",
+        "locType": 1.0,
+        "heading": 86.354393,
+        "accuracy": 3.603663,
+        "speed": 9.749476,
+        "distance": 61.71311,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 260.69295
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.393542,
+          43.072257
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:35:38+00:00",
+        "locType": 1.0,
+        "heading": 65.873924,
+        "accuracy": 10.498112,
+        "speed": 4.646315,
+        "distance": 51.799284,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 261.145708
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.393145,
+          43.071986
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:35:53+00:00",
+        "locType": 1.0,
+        "heading": 114.822334,
+        "accuracy": 6.564608,
+        "speed": 2.318823,
+        "distance": 44.181428,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 263.610781
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.392908,
+          43.071757
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:36:02+00:00",
+        "locType": 1.0,
+        "heading": 235.666107,
+        "accuracy": 7.829761,
+        "speed": 1.09151,
+        "distance": 31.935576,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 263.749515
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.393274,
+          43.071933
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:36:32+00:00",
+        "locType": 1.0,
+        "heading": 293.789856,
+        "accuracy": 4.146133,
+        "speed": 1.553022,
+        "distance": 35.650395,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 261.839122
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.393439,
+          43.07212
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:36:53+00:00",
+        "locType": 1.0,
+        "heading": 332.093781,
+        "accuracy": 5.365238,
+        "speed": 0.321787,
+        "distance": 24.743096,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 262.953651
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.393265,
+          43.072388
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:37:15+00:00",
+        "locType": 1.0,
+        "heading": 326.235229,
+        "accuracy": 5.231145,
+        "speed": 1.513695,
+        "distance": 32.975124,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 261.881625
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.393078,
+          43.07265
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:37:32+00:00",
+        "locType": 1.0,
+        "heading": 331.099915,
+        "accuracy": 8.009861,
+        "speed": 1.495386,
+        "distance": 32.851789,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 263.457637
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.392825,
+          43.07289
+        ]
+      },
+      "properties": {
+        "dataTime": "2026-02-19T23:37:53+00:00",
+        "locType": 1.0,
+        "heading": 308.325134,
+        "accuracy": 9.173692,
+        "speed": 1.537988,
+        "distance": 33.698162,
+        "isBackForeground": 1.0,
+        "stepType": 0.0,
+        "altitude": 264.767474
+      }
+    }
+  ]
+}
