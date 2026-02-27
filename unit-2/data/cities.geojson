@@ -1,0 +1,336 @@
+{
+  "type": "FeatureCollection",
+  "name": "top30_us_msa_gdp_per_capita_2021",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-102.0779, 31.9973] },
+      "properties": {
+        "msa": "Midland, TX MSA",
+        "anchor_city": "Midland, TX",
+        "population_2021": 173180,
+        "gdp_million_usd_2021": 39497,
+        "gdp_per_capita_usd_2021": 228069
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-121.8863, 37.3382] },
+      "properties": {
+        "msa": "San Jose-Sunnyvale-Santa Clara, CA MSA",
+        "anchor_city": "San Jose, CA",
+        "population_2021": 1952185,
+        "gdp_million_usd_2021": 410418,
+        "gdp_per_capita_usd_2021": 210235
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-122.4194, 37.7749] },
+      "properties": {
+        "msa": "San Francisco-Oakland-Berkeley, CA MSA",
+        "anchor_city": "San Francisco, CA",
+        "population_2021": 4623264,
+        "gdp_million_usd_2021": 668677,
+        "gdp_per_capita_usd_2021": 144633
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-122.3321, 47.6062] },
+      "properties": {
+        "msa": "Seattle-Tacoma-Bellevue, WA MSA",
+        "anchor_city": "Seattle, WA",
+        "population_2021": 4011553,
+        "gdp_million_usd_2021": 479966,
+        "gdp_per_capita_usd_2021": 119646
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.7643, 40.2204] },
+      "properties": {
+        "msa": "Trenton-Princeton, NJ MSA",
+        "anchor_city": "Trenton, NJ",
+        "population_2021": 385898,
+        "gdp_million_usd_2021": 43633,
+        "gdp_per_capita_usd_2021": 113069
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-71.0589, 42.3601] },
+      "properties": {
+        "msa": "Boston-Cambridge-Newton, MA-NH MSA",
+        "anchor_city": "Boston, MA",
+        "population_2021": 4899932,
+        "gdp_million_usd_2021": 531671,
+        "gdp_per_capita_usd_2021": 108506
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.1952, 41.1865] },
+      "properties": {
+        "msa": "Bridgeport-Stamford-Norwalk, CT MSA",
+        "anchor_city": "Bridgeport, CT",
+        "population_2021": 959768,
+        "gdp_million_usd_2021": 98751,
+        "gdp_per_capita_usd_2021": 102890
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.006, 40.7128] },
+      "properties": {
+        "msa": "New York-Newark-Jersey City, NY-NJ-PA MSA",
+        "anchor_city": "New York, NY",
+        "population_2021": 19768458,
+        "gdp_million_usd_2021": 1992779,
+        "gdp_per_capita_usd_2021": 100806
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-105.27055, 40.01499] },
+      "properties": {
+        "msa": "Boulder, CO MSA",
+        "anchor_city": "Boulder, CO",
+        "population_2021": 329543,
+        "gdp_million_usd_2021": 33182,
+        "gdp_per_capita_usd_2021": 100691
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-77.0369, 38.9072] },
+      "properties": {
+        "msa": "Washington-Arlington-Alexandria, DC-VA-MD-WV MSA",
+        "anchor_city": "Washington, DC",
+        "population_2021": 6356434,
+        "gdp_million_usd_2021": 607628,
+        "gdp_per_capita_usd_2021": 95593
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-111.891, 40.7608] },
+      "properties": {
+        "msa": "Salt Lake City, UT MSA",
+        "anchor_city": "Salt Lake City, UT",
+        "population_2021": 1263061,
+        "gdp_million_usd_2021": 118494,
+        "gdp_per_capita_usd_2021": 93815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-78.8986, 35.994] },
+      "properties": {
+        "msa": "Durham-Chapel Hill, NC MSA",
+        "anchor_city": "Durham, NC",
+        "population_2021": 654012,
+        "gdp_million_usd_2021": 60814,
+        "gdp_per_capita_usd_2021": 92986
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-96.7311, 43.5446] },
+      "properties": {
+        "msa": "Sioux Falls, SD MSA",
+        "anchor_city": "Sioux Falls, SD",
+        "population_2021": 281958,
+        "gdp_million_usd_2021": 26063,
+        "gdp_per_capita_usd_2021": 92436
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-88.9937, 40.4842] },
+      "properties": {
+        "msa": "Bloomington, IL MSA",
+        "anchor_city": "Bloomington, IL",
+        "population_2021": 170889,
+        "gdp_million_usd_2021": 15140,
+        "gdp_per_capita_usd_2021": 88596
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-84.1052, 40.7426] },
+      "properties": {
+        "msa": "Lima, OH MSA",
+        "anchor_city": "Lima, OH",
+        "population_2021": 101670,
+        "gdp_million_usd_2021": 8962,
+        "gdp_per_capita_usd_2021": 88148
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-72.6734, 41.7658] },
+      "properties": {
+        "msa": "Hartford-East Hartford-Middletown, CT MSA",
+        "anchor_city": "Hartford, CT",
+        "population_2021": 1211906,
+        "gdp_million_usd_2021": 106507,
+        "gdp_per_capita_usd_2021": 87884
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-85.9214, 39.2014] },
+      "properties": {
+        "msa": "Columbus, IN MSA",
+        "anchor_city": "Columbus, IN",
+        "population_2021": 82475,
+        "gdp_million_usd_2021": 7205,
+        "gdp_per_capita_usd_2021": 87360
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-118.2437, 34.0522] },
+      "properties": {
+        "msa": "Los Angeles-Long Beach-Anaheim, CA MSA",
+        "anchor_city": "Los Angeles, CA",
+        "population_2021": 12997353,
+        "gdp_million_usd_2021": 1124682,
+        "gdp_per_capita_usd_2021": 86532
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-104.9903, 39.7392] },
+      "properties": {
+        "msa": "Denver-Aurora-Lakewood, CO MSA",
+        "anchor_city": "Denver, CO",
+        "population_2021": 2972566,
+        "gdp_million_usd_2021": 253399,
+        "gdp_per_capita_usd_2021": 85246
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.625, 41.5868] },
+      "properties": {
+        "msa": "Des Moines-West Des Moines, IA MSA",
+        "anchor_city": "Des Moines, IA",
+        "population_2021": 719146,
+        "gdp_million_usd_2021": 61171,
+        "gdp_per_capita_usd_2021": 85061
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-85.97667, 41.68199] },
+      "properties": {
+        "msa": "Elkhart-Goshen, IN MSA",
+        "anchor_city": "Elkhart, IN",
+        "population_2021": 206921,
+        "gdp_million_usd_2021": 17529,
+        "gdp_per_capita_usd_2021": 84713
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-89.4012, 43.0731] },
+      "properties": {
+        "msa": "Madison, WI MSA",
+        "anchor_city": "Madison, WI",
+        "population_2021": 683183,
+        "gdp_million_usd_2021": 56636,
+        "gdp_per_capita_usd_2021": 82900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-97.7431, 30.2672] },
+      "properties": {
+        "msa": "Austin-Round Rock-Georgetown, TX MSA",
+        "anchor_city": "Austin, TX",
+        "population_2021": 2352426,
+        "gdp_million_usd_2021": 193773,
+        "gdp_per_capita_usd_2021": 82372
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.7562, 42.6526] },
+      "properties": {
+        "msa": "Albany-Schenectady-Troy, NY MSA",
+        "anchor_city": "Albany, NY",
+        "population_2021": 899286,
+        "gdp_million_usd_2021": 73995,
+        "gdp_per_capita_usd_2021": 82282
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.72091, 40.06396] },
+      "properties": {
+        "msa": "Wheeling, WV-OH MSA",
+        "anchor_city": "Wheeling, WV",
+        "population_2021": 137740,
+        "gdp_million_usd_2021": 11239,
+        "gdp_per_capita_usd_2021": 81596
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-117.1611, 32.7157] },
+      "properties": {
+        "msa": "San Diego-Chula Vista-Carlsbad, CA MSA",
+        "anchor_city": "San Diego, CA",
+        "population_2021": 3286069,
+        "gdp_million_usd_2021": 267973,
+        "gdp_per_capita_usd_2021": 81548
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-86.7816, 36.1627] },
+      "properties": {
+        "msa": "Nashville-Davidson–Murfreesboro–Franklin, TN MSA",
+        "anchor_city": "Nashville, TN",
+        "population_2021": 2012476,
+        "gdp_million_usd_2021": 163031,
+        "gdp_per_capita_usd_2021": 81010
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-93.265, 44.9778] },
+      "properties": {
+        "msa": "Minneapolis-St. Paul-Bloomington, MN-WI MSA",
+        "anchor_city": "Minneapolis, MN",
+        "population_2021": 3690512,
+        "gdp_million_usd_2021": 296969,
+        "gdp_per_capita_usd_2021": 80468
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-87.6298, 41.8781] },
+      "properties": {
+        "msa": "Chicago-Naperville-Elgin, IL-IN-WI MSA",
+        "anchor_city": "Chicago, IL",
+        "population_2021": 9509934,
+        "gdp_million_usd_2021": 764583,
+        "gdp_per_capita_usd_2021": 80398
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-90.6646, 42.5006] },
+      "properties": {
+        "msa": "Dubuque, IA MSA",
+        "anchor_city": "Dubuque, IA",
+        "population_2021": 98718,
+        "gdp_million_usd_2021": 7840,
+        "gdp_per_capita_usd_2021": 79418
+      }
+    }
+  ]
+}
