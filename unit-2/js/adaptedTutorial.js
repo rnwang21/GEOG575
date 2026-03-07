@@ -30,7 +30,7 @@ function onEachFeature(feature, layer) {
 
 //function to retrieve the data and place it on the map
 function getData(map) {
-    fetch("data/MegaCities.geojson")
+    fetch("data/airport.geojson")
       .then((response) => response.json())
       .then((json) => {
         const geoLayer = L.geoJSON(json, { onEachFeature }).addTo(map);

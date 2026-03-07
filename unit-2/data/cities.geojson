@@ -1,335 +1,1105 @@
 {
   "type": "FeatureCollection",
-  "name": "top30_us_msa_gdp_per_capita_2021",
+  "name": "top50_us_msa_population_2015_2021",
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-102.0779, 31.9973] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006,
+          40.7128
+        ]
+      },
       "properties": {
-        "msa": "Midland, TX MSA",
-        "anchor_city": "Midland, TX",
-        "population_2021": 173180,
-        "gdp_million_usd_2021": 39497,
-        "gdp_per_capita_usd_2021": 228069
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-121.8863, 37.3382] },
-      "properties": {
-        "msa": "San Jose-Sunnyvale-Santa Clara, CA MSA",
-        "anchor_city": "San Jose, CA",
-        "population_2021": 1952185,
-        "gdp_million_usd_2021": 410418,
-        "gdp_per_capita_usd_2021": 210235
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-122.4194, 37.7749] },
-      "properties": {
-        "msa": "San Francisco-Oakland-Berkeley, CA MSA",
-        "anchor_city": "San Francisco, CA",
-        "population_2021": 4623264,
-        "gdp_million_usd_2021": 668677,
-        "gdp_per_capita_usd_2021": 144633
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-122.3321, 47.6062] },
-      "properties": {
-        "msa": "Seattle-Tacoma-Bellevue, WA MSA",
-        "anchor_city": "Seattle, WA",
-        "population_2021": 4011553,
-        "gdp_million_usd_2021": 479966,
-        "gdp_per_capita_usd_2021": 119646
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-74.7643, 40.2204] },
-      "properties": {
-        "msa": "Trenton-Princeton, NJ MSA",
-        "anchor_city": "Trenton, NJ",
-        "population_2021": 385898,
-        "gdp_million_usd_2021": 43633,
-        "gdp_per_capita_usd_2021": 113069
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-71.0589, 42.3601] },
-      "properties": {
-        "msa": "Boston-Cambridge-Newton, MA-NH MSA",
-        "anchor_city": "Boston, MA",
-        "population_2021": 4899932,
-        "gdp_million_usd_2021": 531671,
-        "gdp_per_capita_usd_2021": 108506
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-73.1952, 41.1865] },
-      "properties": {
-        "msa": "Bridgeport-Stamford-Norwalk, CT MSA",
-        "anchor_city": "Bridgeport, CT",
-        "population_2021": 959768,
-        "gdp_million_usd_2021": 98751,
-        "gdp_per_capita_usd_2021": 102890
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-74.006, 40.7128] },
-      "properties": {
-        "msa": "New York-Newark-Jersey City, NY-NJ-PA MSA",
+        "cbsa": "35620",
+        "msa": "New York-Newark-Jersey City, NY-NJ-PA",
         "anchor_city": "New York, NY",
-        "population_2021": 19768458,
-        "gdp_million_usd_2021": 1992779,
-        "gdp_per_capita_usd_2021": 100806
+        "population_2015": 19322239,
+        "population_2016": 19336456,
+        "population_2017": 19325115,
+        "population_2018": 19289420,
+        "population_2019": 19232494,
+        "population_2020": 19124359,
+        "population_2021": 19768458
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-105.27055, 40.01499] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2437,
+          34.0522
+        ]
+      },
       "properties": {
-        "msa": "Boulder, CO MSA",
-        "anchor_city": "Boulder, CO",
-        "population_2021": 329543,
-        "gdp_million_usd_2021": 33182,
-        "gdp_per_capita_usd_2021": 100691
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-77.0369, 38.9072] },
-      "properties": {
-        "msa": "Washington-Arlington-Alexandria, DC-VA-MD-WV MSA",
-        "anchor_city": "Washington, DC",
-        "population_2021": 6356434,
-        "gdp_million_usd_2021": 607628,
-        "gdp_per_capita_usd_2021": 95593
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-111.891, 40.7608] },
-      "properties": {
-        "msa": "Salt Lake City, UT MSA",
-        "anchor_city": "Salt Lake City, UT",
-        "population_2021": 1263061,
-        "gdp_million_usd_2021": 118494,
-        "gdp_per_capita_usd_2021": 93815
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-78.8986, 35.994] },
-      "properties": {
-        "msa": "Durham-Chapel Hill, NC MSA",
-        "anchor_city": "Durham, NC",
-        "population_2021": 654012,
-        "gdp_million_usd_2021": 60814,
-        "gdp_per_capita_usd_2021": 92986
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-96.7311, 43.5446] },
-      "properties": {
-        "msa": "Sioux Falls, SD MSA",
-        "anchor_city": "Sioux Falls, SD",
-        "population_2021": 281958,
-        "gdp_million_usd_2021": 26063,
-        "gdp_per_capita_usd_2021": 92436
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-88.9937, 40.4842] },
-      "properties": {
-        "msa": "Bloomington, IL MSA",
-        "anchor_city": "Bloomington, IL",
-        "population_2021": 170889,
-        "gdp_million_usd_2021": 15140,
-        "gdp_per_capita_usd_2021": 88596
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-84.1052, 40.7426] },
-      "properties": {
-        "msa": "Lima, OH MSA",
-        "anchor_city": "Lima, OH",
-        "population_2021": 101670,
-        "gdp_million_usd_2021": 8962,
-        "gdp_per_capita_usd_2021": 88148
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-72.6734, 41.7658] },
-      "properties": {
-        "msa": "Hartford-East Hartford-Middletown, CT MSA",
-        "anchor_city": "Hartford, CT",
-        "population_2021": 1211906,
-        "gdp_million_usd_2021": 106507,
-        "gdp_per_capita_usd_2021": 87884
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-85.9214, 39.2014] },
-      "properties": {
-        "msa": "Columbus, IN MSA",
-        "anchor_city": "Columbus, IN",
-        "population_2021": 82475,
-        "gdp_million_usd_2021": 7205,
-        "gdp_per_capita_usd_2021": 87360
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-118.2437, 34.0522] },
-      "properties": {
-        "msa": "Los Angeles-Long Beach-Anaheim, CA MSA",
+        "cbsa": "31080",
+        "msa": "Los Angeles-Long Beach-Anaheim, CA",
         "anchor_city": "Los Angeles, CA",
-        "population_2021": 12997353,
-        "gdp_million_usd_2021": 1124682,
-        "gdp_per_capita_usd_2021": 86532
+        "population_2015": 13226215,
+        "population_2016": 13259142,
+        "population_2017": 13266524,
+        "population_2018": 13237112,
+        "population_2019": 13182453,
+        "population_2020": 13109903,
+        "population_2021": 12997353
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-104.9903, 39.7392] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6298,
+          41.8781
+        ]
+      },
       "properties": {
-        "msa": "Denver-Aurora-Lakewood, CO MSA",
-        "anchor_city": "Denver, CO",
-        "population_2021": 2972566,
-        "gdp_million_usd_2021": 253399,
-        "gdp_per_capita_usd_2021": 85246
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-93.625, 41.5868] },
-      "properties": {
-        "msa": "Des Moines-West Des Moines, IA MSA",
-        "anchor_city": "Des Moines, IA",
-        "population_2021": 719146,
-        "gdp_million_usd_2021": 61171,
-        "gdp_per_capita_usd_2021": 85061
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-85.97667, 41.68199] },
-      "properties": {
-        "msa": "Elkhart-Goshen, IN MSA",
-        "anchor_city": "Elkhart, IN",
-        "population_2021": 206921,
-        "gdp_million_usd_2021": 17529,
-        "gdp_per_capita_usd_2021": 84713
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-89.4012, 43.0731] },
-      "properties": {
-        "msa": "Madison, WI MSA",
-        "anchor_city": "Madison, WI",
-        "population_2021": 683183,
-        "gdp_million_usd_2021": 56636,
-        "gdp_per_capita_usd_2021": 82900
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-97.7431, 30.2672] },
-      "properties": {
-        "msa": "Austin-Round Rock-Georgetown, TX MSA",
-        "anchor_city": "Austin, TX",
-        "population_2021": 2352426,
-        "gdp_million_usd_2021": 193773,
-        "gdp_per_capita_usd_2021": 82372
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-73.7562, 42.6526] },
-      "properties": {
-        "msa": "Albany-Schenectady-Troy, NY MSA",
-        "anchor_city": "Albany, NY",
-        "population_2021": 899286,
-        "gdp_million_usd_2021": 73995,
-        "gdp_per_capita_usd_2021": 82282
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-80.72091, 40.06396] },
-      "properties": {
-        "msa": "Wheeling, WV-OH MSA",
-        "anchor_city": "Wheeling, WV",
-        "population_2021": 137740,
-        "gdp_million_usd_2021": 11239,
-        "gdp_per_capita_usd_2021": 81596
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-117.1611, 32.7157] },
-      "properties": {
-        "msa": "San Diego-Chula Vista-Carlsbad, CA MSA",
-        "anchor_city": "San Diego, CA",
-        "population_2021": 3286069,
-        "gdp_million_usd_2021": 267973,
-        "gdp_per_capita_usd_2021": 81548
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-86.7816, 36.1627] },
-      "properties": {
-        "msa": "Nashville-Davidson–Murfreesboro–Franklin, TN MSA",
-        "anchor_city": "Nashville, TN",
-        "population_2021": 2012476,
-        "gdp_million_usd_2021": 163031,
-        "gdp_per_capita_usd_2021": 81010
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-93.265, 44.9778] },
-      "properties": {
-        "msa": "Minneapolis-St. Paul-Bloomington, MN-WI MSA",
-        "anchor_city": "Minneapolis, MN",
-        "population_2021": 3690512,
-        "gdp_million_usd_2021": 296969,
-        "gdp_per_capita_usd_2021": 80468
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-87.6298, 41.8781] },
-      "properties": {
-        "msa": "Chicago-Naperville-Elgin, IL-IN-WI MSA",
+        "cbsa": "16980",
+        "msa": "Chicago-Naperville-Elgin, IL-IN-WI",
         "anchor_city": "Chicago, IL",
-        "population_2021": 9509934,
-        "gdp_million_usd_2021": 764583,
-        "gdp_per_capita_usd_2021": 80398
+        "population_2015": 9552351,
+        "population_2016": 9533732,
+        "population_2017": 9513947,
+        "population_2018": 9485403,
+        "population_2019": 9454282,
+        "population_2020": 9406638,
+        "population_2021": 9509934
       }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-90.6646, 42.5006] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.797,
+          32.7767
+        ]
+      },
       "properties": {
-        "msa": "Dubuque, IA MSA",
-        "anchor_city": "Dubuque, IA",
-        "population_2021": 98718,
-        "gdp_million_usd_2021": 7840,
-        "gdp_per_capita_usd_2021": 79418
+        "cbsa": "19100",
+        "msa": "Dallas-Fort Worth-Arlington, TX",
+        "anchor_city": "Dallas, TX",
+        "population_2015": 7042322,
+        "population_2016": 7195475,
+        "population_2017": 7337707,
+        "population_2018": 7457586,
+        "population_2019": 7574390,
+        "population_2020": 7694138,
+        "population_2021": 7759615
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.3698,
+          29.7604
+        ]
+      },
+      "properties": {
+        "cbsa": "26420",
+        "msa": "Houston-The Woodlands-Sugar Land, TX",
+        "anchor_city": "Houston, TX",
+        "population_2015": 6670803,
+        "population_2016": 6806315,
+        "population_2017": 6898912,
+        "population_2018": 6974948,
+        "population_2019": 7063400,
+        "population_2020": 7154478,
+        "population_2021": 7206841
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0369,
+          38.9072
+        ]
+      },
+      "properties": {
+        "cbsa": "47900",
+        "msa": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+        "anchor_city": "Washington, DC",
+        "population_2015": 6099163,
+        "population_2016": 6155359,
+        "population_2017": 6217791,
+        "population_2018": 6256312,
+        "population_2019": 6297454,
+        "population_2020": 6324629,
+        "population_2021": 6356434
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1652,
+          39.9526
+        ]
+      },
+      "properties": {
+        "cbsa": "37980",
+        "msa": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+        "anchor_city": "Philadelphia, PA",
+        "population_2015": 6060137,
+        "population_2016": 6070160,
+        "population_2017": 6082355,
+        "population_2018": 6096805,
+        "population_2019": 6104777,
+        "population_2020": 6107906,
+        "population_2021": 6228601
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.388,
+          33.749
+        ]
+      },
+      "properties": {
+        "cbsa": "12060",
+        "msa": "Atlanta-Sandy Springs-Alpharetta, GA",
+        "anchor_city": "Atlanta, GA",
+        "population_2015": 5688583,
+        "population_2016": 5791874,
+        "population_2017": 5876763,
+        "population_2018": 5951394,
+        "population_2019": 6027231,
+        "population_2020": 6087762,
+        "population_2021": 6144050
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1918,
+          25.7617
+        ]
+      },
+      "properties": {
+        "cbsa": "33100",
+        "msa": "Miami-Fort Lauderdale-Pompano Beach, FL",
+        "anchor_city": "Miami, FL",
+        "population_2015": 5969756,
+        "population_2016": 6055139,
+        "population_2017": 6115654,
+        "population_2018": 6140602,
+        "population_2019": 6164887,
+        "population_2020": 6173008,
+        "population_2021": 6091747
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.074,
+          33.4484
+        ]
+      },
+      "properties": {
+        "cbsa": "38060",
+        "msa": "Phoenix-Mesa-Chandler, AZ",
+        "anchor_city": "Phoenix, AZ",
+        "population_2015": 4580345,
+        "population_2016": 4675331,
+        "population_2017": 4760717,
+        "population_2018": 4851830,
+        "population_2019": 4953901,
+        "population_2020": 5059909,
+        "population_2021": 4946145
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ]
+      },
+      "properties": {
+        "cbsa": "14460",
+        "msa": "Boston-Cambridge-Newton, MA-NH",
+        "anchor_city": "Boston, MA",
+        "population_2015": 4780848,
+        "population_2016": 4812039,
+        "population_2017": 4845221,
+        "population_2018": 4862290,
+        "population_2019": 4876271,
+        "population_2020": 4878211,
+        "population_2021": 4899932
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.3962,
+          33.9533
+        ]
+      },
+      "properties": {
+        "cbsa": "40140",
+        "msa": "Riverside-San Bernardino-Ontario, CA",
+        "anchor_city": "Riverside, CA",
+        "population_2015": 4459000,
+        "population_2016": 4509008,
+        "population_2017": 4562905,
+        "population_2018": 4608848,
+        "population_2019": 4642848,
+        "population_2020": 4678371,
+        "population_2021": 4653105
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.4194,
+          37.7749
+        ]
+      },
+      "properties": {
+        "cbsa": "41860",
+        "msa": "San Francisco-Oakland-Berkeley, CA",
+        "anchor_city": "San Francisco, CA",
+        "population_2015": 4648164,
+        "population_2016": 4688017,
+        "population_2017": 4711551,
+        "population_2018": 4725613,
+        "population_2019": 4724016,
+        "population_2020": 4696902,
+        "population_2021": 4623264
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      "properties": {
+        "cbsa": "19820",
+        "msa": "Detroit-Warren-Dearborn, MI",
+        "anchor_city": "Detroit, MI",
+        "population_2015": 4310146,
+        "population_2016": 4317016,
+        "population_2017": 4322490,
+        "population_2018": 4323861,
+        "population_2019": 4319413,
+        "population_2020": 4304136,
+        "population_2021": 4365205
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3321,
+          47.6062
+        ]
+      },
+      "properties": {
+        "cbsa": "42660",
+        "msa": "Seattle-Tacoma-Bellevue, WA",
+        "anchor_city": "Seattle, WA",
+        "population_2015": 3741711,
+        "population_2016": 3819753,
+        "population_2017": 3888807,
+        "population_2018": 3937546,
+        "population_2019": 3977785,
+        "population_2020": 4018598,
+        "population_2021": 4011553
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.265,
+          44.9778
+        ]
+      },
+      "properties": {
+        "cbsa": "33460",
+        "msa": "Minneapolis-St. Paul-Bloomington, MN-WI",
+        "anchor_city": "Minneapolis, MN",
+        "population_2015": 3505122,
+        "population_2016": 3540411,
+        "population_2017": 3577815,
+        "population_2018": 3611648,
+        "population_2019": 3639892,
+        "population_2020": 3657477,
+        "population_2021": 3690512
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1611,
+          32.7157
+        ]
+      },
+      "properties": {
+        "cbsa": "41740",
+        "msa": "San Diego-Chula Vista-Carlsbad, CA",
+        "anchor_city": "San Diego, CA",
+        "population_2015": 3280825,
+        "population_2016": 3305462,
+        "population_2017": 3319019,
+        "population_2018": 3332483,
+        "population_2019": 3330459,
+        "population_2020": 3332427,
+        "population_2021": 3286069
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.4572,
+          27.9506
+        ]
+      },
+      "properties": {
+        "cbsa": "45300",
+        "msa": "Tampa-St. Petersburg-Clearwater, FL",
+        "anchor_city": "Tampa, FL",
+        "population_2015": 2985475,
+        "population_2016": 3051607,
+        "population_2017": 3110278,
+        "population_2018": 3158674,
+        "population_2019": 3200120,
+        "population_2020": 3243963,
+        "population_2021": 3219514
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9903,
+          39.7392
+        ]
+      },
+      "properties": {
+        "cbsa": "19740",
+        "msa": "Denver-Aurora-Lakewood, CO",
+        "anchor_city": "Denver, CO",
+        "population_2015": 2814383,
+        "population_2016": 2858489,
+        "population_2017": 2893661,
+        "population_2018": 2933991,
+        "population_2019": 2964811,
+        "population_2020": 2991231,
+        "population_2021": 2972566
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6122,
+          39.2904
+        ]
+      },
+      "properties": {
+        "cbsa": "12580",
+        "msa": "Baltimore-Columbia-Towson, MD",
+        "anchor_city": "Baltimore, MD",
+        "population_2015": 2791080,
+        "population_2016": 2795270,
+        "population_2017": 2799860,
+        "population_2018": 2802908,
+        "population_2019": 2803903,
+        "population_2020": 2800189,
+        "population_2021": 2838327
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1994,
+          38.627
+        ]
+      },
+      "properties": {
+        "cbsa": "41180",
+        "msa": "St. Louis, MO-IL",
+        "anchor_city": "St. Louis, MO",
+        "population_2015": 2808808,
+        "population_2016": 2807245,
+        "population_2017": 2807599,
+        "population_2018": 2805800,
+        "population_2019": 2805617,
+        "population_2020": 2805473,
+        "population_2021": 2809299
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8431,
+          35.2271
+        ]
+      },
+      "properties": {
+        "cbsa": "16740",
+        "msa": "Charlotte-Concord-Gastonia, NC-SC",
+        "anchor_city": "Charlotte, NC",
+        "population_2015": 2449506,
+        "population_2016": 2501838,
+        "population_2017": 2552701,
+        "population_2018": 2596204,
+        "population_2019": 2640117,
+        "population_2020": 2684276,
+        "population_2021": 2701046
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.3792,
+          28.5383
+        ]
+      },
+      "properties": {
+        "cbsa": "36740",
+        "msa": "Orlando-Kissimmee-Sanford, FL",
+        "anchor_city": "Orlando, FL",
+        "population_2015": 2389577,
+        "population_2016": 2457432,
+        "population_2017": 2519926,
+        "population_2018": 2576297,
+        "population_2019": 2608273,
+        "population_2020": 2639374,
+        "population_2021": 2691925
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.4936,
+          29.4241
+        ]
+      },
+      "properties": {
+        "cbsa": "41700",
+        "msa": "San Antonio-New Braunfels, TX",
+        "anchor_city": "San Antonio, TX",
+        "population_2015": 2379357,
+        "population_2016": 2426051,
+        "population_2017": 2471603,
+        "population_2018": 2512526,
+        "population_2019": 2550147,
+        "population_2020": 2590732,
+        "population_2021": 2601788
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.6784,
+          45.5152
+        ]
+      },
+      "properties": {
+        "cbsa": "38900",
+        "msa": "Portland-Vancouver-Hillsboro, OR-WA",
+        "anchor_city": "Portland, OR",
+        "population_2015": 2383354,
+        "population_2016": 2428626,
+        "population_2017": 2457258,
+        "population_2018": 2475249,
+        "population_2019": 2492479,
+        "population_2020": 2510259,
+        "population_2021": 2511612
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.4944,
+          38.5816
+        ]
+      },
+      "properties": {
+        "cbsa": "40900",
+        "msa": "Sacramento-Roseville-Folsom, CA",
+        "anchor_city": "Sacramento, CA",
+        "population_2015": 2263042,
+        "population_2016": 2292043,
+        "population_2017": 2320595,
+        "population_2018": 2343292,
+        "population_2019": 2363654,
+        "population_2020": 2374749,
+        "population_2021": 2411428
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9959,
+          40.4406
+        ]
+      },
+      "properties": {
+        "cbsa": "38300",
+        "msa": "Pittsburgh, PA",
+        "anchor_city": "Pittsburgh, PA",
+        "population_2015": 2348714,
+        "population_2016": 2341313,
+        "population_2017": 2329971,
+        "population_2018": 2323785,
+        "population_2019": 2317913,
+        "population_2020": 2309246,
+        "population_2021": 2353538
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7431,
+          30.2672
+        ]
+      },
+      "properties": {
+        "cbsa": "12420",
+        "msa": "Austin-Round Rock-Georgetown, TX",
+        "anchor_city": "Austin, TX",
+        "population_2015": 2002814,
+        "population_2016": 2062808,
+        "population_2017": 2115999,
+        "population_2018": 2166805,
+        "population_2019": 2228106,
+        "population_2020": 2295303,
+        "population_2021": 2352426
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1398,
+          36.1699
+        ]
+      },
+      "properties": {
+        "cbsa": "29820",
+        "msa": "Las Vegas-Henderson-Paradise, NV",
+        "anchor_city": "Las Vegas, NV",
+        "population_2015": 2097832,
+        "population_2016": 2140240,
+        "population_2017": 2183273,
+        "population_2018": 2228970,
+        "population_2019": 2275884,
+        "population_2020": 2315963,
+        "population_2021": 2292476
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.512,
+          39.1031
+        ]
+      },
+      "properties": {
+        "cbsa": "17140",
+        "msa": "Cincinnati, OH-KY-IN",
+        "anchor_city": "Cincinnati, OH",
+        "population_2015": 2183071,
+        "population_2016": 2193676,
+        "population_2017": 2205111,
+        "population_2018": 2214370,
+        "population_2019": 2225262,
+        "population_2020": 2232907,
+        "population_2021": 2259935
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5786,
+          39.0997
+        ]
+      },
+      "properties": {
+        "cbsa": "28140",
+        "msa": "Kansas City, MO-KS",
+        "anchor_city": "Kansas City, MO",
+        "population_2015": 2087407,
+        "population_2016": 2108768,
+        "population_2017": 2129425,
+        "population_2018": 2147602,
+        "population_2019": 2161639,
+        "population_2020": 2173212,
+        "population_2021": 2199490
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.9988,
+          39.9612
+        ]
+      },
+      "properties": {
+        "cbsa": "18140",
+        "msa": "Columbus, OH",
+        "anchor_city": "Columbus, OH",
+        "population_2015": 2028506,
+        "population_2016": 2053509,
+        "population_2017": 2084070,
+        "population_2018": 2105684,
+        "population_2019": 2125507,
+        "population_2020": 2138946,
+        "population_2021": 2151017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.1581,
+          39.7684
+        ]
+      },
+      "properties": {
+        "cbsa": "26900",
+        "msa": "Indianapolis-Carmel-Anderson, IN",
+        "anchor_city": "Indianapolis, IN",
+        "population_2015": 1986920,
+        "population_2016": 2007837,
+        "population_2017": 2028973,
+        "population_2018": 2053475,
+        "population_2019": 2073336,
+        "population_2020": 2091019,
+        "population_2021": 2126804
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6944,
+          41.4993
+        ]
+      },
+      "properties": {
+        "cbsa": "17460",
+        "msa": "Cleveland-Elyria, OH",
+        "anchor_city": "Cleveland, OH",
+        "population_2015": 2064569,
+        "population_2016": 2061358,
+        "population_2017": 2057650,
+        "population_2018": 2053841,
+        "population_2019": 2049028,
+        "population_2020": 2043807,
+        "population_2021": 2075662
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.7816,
+          36.1627
+        ]
+      },
+      "properties": {
+        "cbsa": "34980",
+        "msa": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+        "anchor_city": "Nashville, TN",
+        "population_2015": 1805988,
+        "population_2016": 1843004,
+        "population_2017": 1876449,
+        "population_2018": 1906794,
+        "population_2019": 1933455,
+        "population_2020": 1961232,
+        "population_2021": 2012476
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.8863,
+          37.3382
+        ]
+      },
+      "properties": {
+        "cbsa": "41940",
+        "msa": "San Jose-Sunnyvale-Santa Clara, CA",
+        "anchor_city": "San Jose, CA",
+        "population_2015": 1974012,
+        "population_2016": 1987414,
+        "population_2017": 1992441,
+        "population_2018": 1993400,
+        "population_2019": 1985214,
+        "population_2020": 1971160,
+        "population_2021": 1952185
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.978,
+          36.8529
+        ]
+      },
+      "properties": {
+        "cbsa": "47260",
+        "msa": "Virginia Beach-Norfolk-Newport News, VA-NC",
+        "anchor_city": "Virginia Beach, VA",
+        "population_2015": 1757775,
+        "population_2016": 1760950,
+        "population_2017": 1763396,
+        "population_2018": 1766989,
+        "population_2019": 1773624,
+        "population_2020": 1779824,
+        "population_2021": 1803328
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4128,
+          41.824
+        ]
+      },
+      "properties": {
+        "cbsa": "39300",
+        "msa": "Providence-Warwick, RI-MA",
+        "anchor_city": "Providence, RI",
+        "population_2015": 1613990,
+        "population_2016": 1616229,
+        "population_2017": 1618003,
+        "population_2018": 1624118,
+        "population_2019": 1623254,
+        "population_2020": 1623890,
+        "population_2021": 1675774
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6557,
+          30.3322
+        ]
+      },
+      "properties": {
+        "cbsa": "27260",
+        "msa": "Jacksonville, FL",
+        "anchor_city": "Jacksonville, FL",
+        "population_2015": 1445619,
+        "population_2016": 1477702,
+        "population_2017": 1506894,
+        "population_2018": 1534682,
+        "population_2019": 1561806,
+        "population_2020": 1587892,
+        "population_2021": 1637666
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9065,
+          43.0389
+        ]
+      },
+      "properties": {
+        "cbsa": "33340",
+        "msa": "Milwaukee-Waukesha, WI",
+        "anchor_city": "Milwaukee, WI",
+        "population_2015": 1576894,
+        "population_2016": 1576522,
+        "population_2017": 1575443,
+        "population_2018": 1575530,
+        "population_2019": 1577455,
+        "population_2020": 1577676,
+        "population_2021": 1566487
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.6382,
+          35.7796
+        ]
+      },
+      "properties": {
+        "cbsa": "39580",
+        "msa": "Raleigh-Cary, NC",
+        "anchor_city": "Raleigh, NC",
+        "population_2015": 1271668,
+        "population_2016": 1304551,
+        "population_2017": 1335179,
+        "population_2018": 1362879,
+        "population_2019": 1392356,
+        "population_2020": 1420376,
+        "population_2021": 1448411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.5164,
+          35.4676
+        ]
+      },
+      "properties": {
+        "cbsa": "36420",
+        "msa": "Oklahoma City, OK",
+        "anchor_city": "Oklahoma City, OK",
+        "population_2015": 1357524,
+        "population_2016": 1373495,
+        "population_2017": 1381897,
+        "population_2018": 1394449,
+        "population_2019": 1409988,
+        "population_2020": 1425375,
+        "population_2021": 1441647
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.049,
+          35.1495
+        ]
+      },
+      "properties": {
+        "cbsa": "32820",
+        "msa": "Memphis, TN-MS-AR",
+        "anchor_city": "Memphis, TN",
+        "population_2015": 1335548,
+        "population_2016": 1337158,
+        "population_2017": 1339678,
+        "population_2018": 1343892,
+        "population_2019": 1346346,
+        "population_2020": 1348678,
+        "population_2021": 1336103
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.436,
+          37.5407
+        ]
+      },
+      "properties": {
+        "cbsa": "40060",
+        "msa": "Richmond, VA",
+        "anchor_city": "Richmond, VA",
+        "population_2015": 1247430,
+        "population_2016": 1259571,
+        "population_2017": 1270792,
+        "population_2018": 1282515,
+        "population_2019": 1293983,
+        "population_2020": 1303469,
+        "population_2021": 1324062
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7585,
+          38.2527
+        ]
+      },
+      "properties": {
+        "cbsa": "31140",
+        "msa": "Louisville/Jefferson County, KY-IN",
+        "anchor_city": "Louisville, KY",
+        "population_2015": 1246817,
+        "population_2016": 1253093,
+        "population_2017": 1260344,
+        "population_2018": 1262810,
+        "population_2019": 1266200,
+        "population_2020": 1268993,
+        "population_2021": 1284566
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.891,
+          40.7608
+        ]
+      },
+      "properties": {
+        "cbsa": "41620",
+        "msa": "Salt Lake City, UT",
+        "anchor_city": "Salt Lake City, UT",
+        "population_2015": 1165366,
+        "population_2016": 1185394,
+        "population_2017": 1204763,
+        "population_2018": 1218895,
+        "population_2019": 1230695,
+        "population_2020": 1240029,
+        "population_2021": 1263061
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      "properties": {
+        "cbsa": "35380",
+        "msa": "New Orleans-Metairie, LA",
+        "anchor_city": "New Orleans, LA",
+        "population_2015": 1261063,
+        "population_2016": 1268633,
+        "population_2017": 1271460,
+        "population_2018": 1271921,
+        "population_2019": 1273979,
+        "population_2020": 1272258,
+        "population_2021": 1261726
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.6734,
+          41.7658
+        ]
+      },
+      "properties": {
+        "cbsa": "25540",
+        "msa": "Hartford-East Hartford-Middletown, CT",
+        "anchor_city": "Hartford, CT",
+        "population_2015": 1212187,
+        "population_2016": 1208908,
+        "population_2017": 1207335,
+        "population_2018": 1206733,
+        "population_2019": 1204752,
+        "population_2020": 1201483,
+        "population_2021": 1211906
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.8784,
+          42.8864
+        ]
+      },
+      "properties": {
+        "cbsa": "15380",
+        "msa": "Buffalo-Cheektowaga, NY",
+        "anchor_city": "Buffalo, NY",
+        "population_2015": 1133249,
+        "population_2016": 1130547,
+        "population_2017": 1130289,
+        "population_2018": 1130241,
+        "population_2019": 1128376,
+        "population_2020": 1125637,
+        "population_2021": 1162336
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.8025,
+          33.5207
+        ]
+      },
+      "properties": {
+        "cbsa": "13820",
+        "msa": "Birmingham-Hoover, AL",
+        "anchor_city": "Birmingham, AL",
+        "population_2015": 1080114,
+        "population_2016": 1083318,
+        "population_2017": 1086149,
+        "population_2018": 1088545,
+        "population_2019": 1090916,
+        "population_2020": 1091921,
+        "population_2021": 1114262
       }
     }
   ]

@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>GEOG575 Web Page</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>U.S. Metropolitan Population Change, 2015–2021</title>
 
-        <link rel="stylesheet" href="lib/Leaflet/leaflet.css">
+    <link rel="stylesheet" href="lib/Leaflet/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
+<body>
+    <header>
+        <h1>U.S. Metropolitan Population Change, 2015–2021</h1>
+        <nav>
+            <a href="#">Map</a> |
+            <a href="#">About</a> |
+            <a href="#">Sources</a>
+        </nav>
+    </header>
 
-            #map {
-                height: 800px;
-                width: 100%;
-            }
-        </style>
-    </head>
+    <main>
+        <section>
+            <h2>About This Map</h2>
+            <p>
+                This interactive proportional symbol map visualizes population change across the 50 largest
+                metropolitan statistical areas (MSAs) in the United States from 2015 to 2021. Users can zoom,
+                pan, retrieve detailed information through popups, and sequence through seven yearly population
+                estimates to compare how metropolitan growth patterns vary across regions.
+            </p>
+            <p>
+                The map is designed to support discussion about regional urbanization and population growth in the United States.
+            </p>
+        </section>
 
-    <body>
-        <!-- Header -->
-        <header>
-            <h1>Welcome to My Website</h1>
-            <nav>
-                <a href="#">Home</a> |
-                <a href="#">About</a> |
-                <a href="#">Contact</a>
-            </nav>
-        </header>
+        <div id="map"></div>
 
-        <!-- Main content -->
-        <main>
-            <section>
-                <h2>About the website</h2>
-                <p>
-                    This is for GEOG575.
-                </p>
-                <button id="clickBtn">Click me</button>
-            </section>
+    </main>
+    <footer> <p>Population estimates for U.S. metropolitan statistical areas are based on U.S. Census Bureau metropolitan population estimates. Map tiles are provided by OpenStreetMap.</p> </footer>
 
-             <!-- Leaflet map container before scripts -->
-            <div id="map"></div>
-            <div id="panel"></div>
-             
-        </main>
-        
 
-        <footer>
-            <p>&copy; 2026 Wang. All rights reserved.</p>
-        </footer>
-
-        <!-- Leaflet JS -->
-        <script type="text/javascript" src="lib/Leaflet/leaflet-src.js"></script>
-        <!-- Main JS -->
-        <script src="js/main.js" defer></script>
-
-    </body>
+    <script type="text/javascript" src="lib/Leaflet/leaflet-src.js"></script>
+    <script src="js/main.js" defer></script>
+</body>
 </html>
 
