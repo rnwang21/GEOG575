@@ -1,157 +1,188 @@
-//execute script when window is loaded
-window.onload = function(){
+window.onload = setMap;
 
-    //SVG dimension variables
-    var w = 900, h = 500;
+function setMap() {
+    const width = 960;
+    const height = 600;
 
-    //city population data
-    var cityPop = [
-        {
-            city: "Madison",
-            population: 233209
-        },
-        {
-            city: "Milwaukee",
-            population: 594833
-        },
-        {
-            city: "Green Bay",
-            population: 104057
-        },
-        {
-            city: "Superior",
-            population: 27244
-        }
-    ];
-
-    //create the SVG container
-    var container = d3.select("body")
+    // create svg
+    const map = d3.select("body")
         .append("svg")
-        .attr("width", w)
-        .attr("height", h)
-        .attr("class", "container");
+        .attr("class", "map")
+        .attr("width", width)
+        .attr("height", height);
 
-    //create inner rectangle
-    var innerRect = container.append("rect")
-        .datum(400)
-        .attr("width", function(d){
-            return d * 2;
-        })
-        .attr("height", function(d){
-            return d;
-        })
-        .attr("class", "innerRect")
-        .attr("x", 50)
-        .attr("y", 50)
-        .style("fill", "#FFFFFF");
+    // group for zooming
+    const g = map.append("g");
 
-    //create x scale
-    var x = d3.scaleLinear()
-        .range([90, 750])
-        .domain([0, 3]);
-
-    //find minimum population
-    var minPop = d3.min(cityPop, function(d){
-        return d.population;
-    });
-
-    //find maximum population
-    var maxPop = d3.max(cityPop, function(d){
-        return d.population;
-    });
-
-    //create y scale
-    var y = d3.scaleLinear()
-        .range([450, 50])
-        .domain([0, 700000]);
-
-    //create color scale
-    var color = d3.scaleLinear()
-        .range([
-            "#FDBE85",
-            "#D94701"
-        ])
-        .domain([
-            minPop,
-            maxPop
-        ]);
-
-    //create circles
-    var circles = container.selectAll(".circles")
-        .data(cityPop)
-        .enter()
-        .append("circle")
-        .attr("class", "circles")
-        .attr("id", function(d){
-            return d.city.replace(/\s+/g, "");
-        })
-        .attr("r", function(d){
-            var area = d.population * 0.01;
-            return Math.sqrt(area / Math.PI);
-        })
-        .attr("cx", function(d, i){
-            return x(i);
-        })
-        .attr("cy", function(d){
-            return y(d.population);
-        })
-        .style("fill", function(d){
-            return color(d.population);
-        })
-        .style("stroke", "#000");
-
-    //create y axis generator
-    var yAxis = d3.axisLeft(y);
-
-    //create axis group and place it
-    var axis = container.append("g")
-        .attr("class", "axis")
-        .attr("transform", "translate(50, 0)")
-        .call(yAxis);
-
-    //create chart title
-    var title = container.append("text")
+    // title
+    map.append("text")
         .attr("class", "title")
-        .attr("text-anchor", "middle")
-        .attr("x", 450)
+        .attr("x", 20)
         .attr("y", 30)
-        .text("City Populations");
+        .text("Los Angeles Block Groups");
 
-    //create format generator
-    var format = d3.format(",");
+    map.append("text")
+        .attr("class", "info")
+        .attr("x", 20)
+        .attr("y", 50)
+        .text("Choropleth: Renter Occupancy Rate");
 
-    //create labels
-    var labels = container.selectAll(".labels")
-        .data(cityPop)
-        .enter()
-        .append("text")
-        .attr("class", "labels")
-        .attr("text-anchor", "left")
-        .attr("y", function(d){
-            return y(d.population);
+    // projection: let D3 fit it automatically to the data
+    const projection = d3.geoMercator();
+
+    // path generator
+    const path = d3.geoPath()
+        .projection(projection);
+
+    // load topojson
+    Promise.all([
+        d3.json("data/la_bg.topojson")
+    ]).then(function (data) {
+        const laData = data[0];
+
+        console.log("TopoJSON loaded:", laData);
+        console.log("Available objects:", laData.objects);
+
+        // automatically get object name
+        const objectName = Object.keys(laData.objects)[0];
+        const bgGeoJSON = topojson.feature(laData, laData.objects[objectName]);
+
+        console.log("Using object:", objectName);
+        console.log("Converted GeoJSON:", bgGeoJSON);
+        console.log("Feature count:", bgGeoJSON.features.length);
+
+        // fit projection to data
+        projection.fitSize([width, height], bgGeoJSON);
+
+        // graticule
+        const graticule = d3.geoGraticule().step([0.1, 0.1]);
+
+        g.append("path")
+            .datum(graticule.outline())
+            .attr("class", "gratBackground")
+            .attr("d", path);
+
+        g.selectAll(".gratLines")
+            .data(graticule.lines())
+            .enter()
+            .append("path")
+            .attr("class", "gratLines")
+            .attr("d", path);
+
+        // compute renter occupancy rate = RENTER_OCC / HOUSEHOLDS
+        bgGeoJSON.features.forEach(function (d) {
+            const households = +d.properties.HOUSEHOLDS;
+            const renterOcc = +d.properties.RENTER_OCC;
+
+            if (households > 0) {
+                d.properties.renterRate = renterOcc / households;
+            } else {
+                d.properties.renterRate = null;
+            }
         });
 
-    //create first line of labels
-    var nameLine = labels.append("tspan")
-        .attr("class", "nameLine")
-        .attr("x", function(d, i){
-            var radius = Math.sqrt(d.population * 0.01 / Math.PI);
-            return x(i) + radius + 5;
-        })
-        .text(function(d){
-            return d.city;
+        // valid values only
+        const values = bgGeoJSON.features
+            .map(function (d) {
+                return d.properties.renterRate;
+            })
+            .filter(function (v) {
+                return v !== null && !isNaN(v);
+            });
+
+        const minVal = d3.min(values);
+        const maxVal = d3.max(values);
+
+        console.log("Min renter rate:", minVal);
+        console.log("Max renter rate:", maxVal);
+
+        // color scale
+        const colorScale = d3.scaleSequential()
+            .domain([minVal, maxVal])
+            .interpolator(d3.interpolateOrRd);
+
+        // draw polygons
+        g.selectAll(".bg")
+            .data(bgGeoJSON.features)
+            .enter()
+            .append("path")
+            .attr("class", "bg")
+            .attr("d", path)
+            .style("fill", function (d) {
+                const v = d.properties.renterRate;
+                return (v !== null && !isNaN(v)) ? colorScale(v) : "#ccc";
+            })
+            .append("title")
+            .text(function (d) {
+                const rate = d.properties.renterRate;
+                return "GlobalID: " + d.properties.GlobalID +
+                    "\nHOUSEHOLDS: " + d.properties.HOUSEHOLDS +
+                    "\nRENTER_OCC: " + d.properties.RENTER_OCC +
+                    "\nRenter Occupancy Rate: " +
+                    (rate !== null ? d3.format(".1%")(rate) : "N/A");
+            });
+
+        // legend
+        const legendWidth = 220;
+        const legendHeight = 12;
+        const legendX = width - 260;
+        const legendY = height - 45;
+
+        const defs = map.append("defs");
+
+        const linearGradient = defs.append("linearGradient")
+            .attr("id", "legend-gradient")
+            .attr("x1", "0%")
+            .attr("x2", "100%")
+            .attr("y1", "0%")
+            .attr("y2", "0%");
+
+        linearGradient.append("stop")
+            .attr("offset", "0%")
+            .attr("stop-color", colorScale(minVal));
+
+        linearGradient.append("stop")
+            .attr("offset", "100%")
+            .attr("stop-color", colorScale(maxVal));
+
+        map.append("text")
+            .attr("class", "info")
+            .attr("x", legendX)
+            .attr("y", legendY - 8)
+            .text("Renter Occupancy Rate");
+
+        map.append("rect")
+            .attr("x", legendX)
+            .attr("y", legendY)
+            .attr("width", legendWidth)
+            .attr("height", legendHeight)
+            .style("fill", "url(#legend-gradient)")
+            .style("stroke", "#666")
+            .style("stroke-width", "0.5px");
+
+        map.append("text")
+            .attr("class", "info")
+            .attr("x", legendX)
+            .attr("y", legendY + 28)
+            .text(d3.format(".0%")(minVal));
+
+        map.append("text")
+            .attr("class", "info")
+            .attr("x", legendX + legendWidth)
+            .attr("y", legendY + 28)
+            .attr("text-anchor", "end")
+            .text(d3.format(".0%")(maxVal));
+
+    }).catch(function (error) {
+        console.error("Error loading data:", error);
+    });
+
+    // zoom behavior
+    const zoom = d3.zoom()
+        .scaleExtent([1, 8])
+        .on("zoom", function (event) {
+            g.attr("transform", event.transform);
         });
 
-    //create second line of labels
-    var popLine = labels.append("tspan")
-        .attr("class", "popLine")
-        .attr("x", function(d, i){
-            var radius = Math.sqrt(d.population * 0.01 / Math.PI);
-            return x(i) + radius + 5;
-        })
-        .attr("dy", "15")
-        .text(function(d){
-            return "Pop. " + format(d.population);
-        });
-
-};
+    map.call(zoom);
+}
