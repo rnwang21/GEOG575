@@ -1,7 +1,7 @@
-let map;
-let minValue;
-let sequenceControl;
-let symbolLegendControl;
+let map;                     // Leaflet map object
+let minValue;                // smallest data value used for symbol scaling
+let sequenceControl;         // temporal slider control
+let symbolLegendControl;     // proportional symbol legend control
 
 //instantiate the Leaflet map
 function createMap() {
@@ -11,6 +11,7 @@ function createMap() {
     preferCanvas: true,
   });
 
+  // add OpenStreetMap basemap
   L.tileLayer(
     "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
     {
@@ -20,6 +21,7 @@ function createMap() {
     }
   ).addTo(map);
 
+  // load GeoJSON data
   getData();
 }
 
@@ -80,101 +82,127 @@ function createSymbolLegend() {
 
 // Update the proportional symbol legend based on current attribute values
 function updateSymbolLegend(attribute) {
-    let values = [];
+  let values = [];
 
-    map.eachLayer(function (layer) {
-      if (layer.feature && layer.feature.properties && layer.feature.properties[attribute] != null) {
-        const v = Number(layer.feature.properties[attribute]);
-        if (Number.isFinite(v) && v > 0) values.push(v);
-      }
-    });
+  map.eachLayer(function(layer) {
+    if (layer.feature && layer.feature.properties && layer.feature.properties[attribute] != null) {
+      const v = Number(layer.feature.properties[attribute]);
+      if (Number.isFinite(v) && v > 0) values.push(v);
+    }
+  });
 
-    if (values.length === 0) return;
+  if (values.length === 0) return;
 
-    const minVal = Math.min(...values);
-    const maxVal = Math.max(...values);
-    const midVal = (minVal + maxVal) / 2;
+  const minVal = Math.min(...values);
+  const maxVal = Math.max(...values);
+  const midVal = (minVal + maxVal) / 2;
 
-    const circles = [
-      { value: maxVal, label: Math.round(maxVal).toLocaleString() },
-      { value: midVal, label: Math.round(midVal).toLocaleString() },
-      { value: minVal, label: Math.round(minVal).toLocaleString() }
-    ];
+  const svg = document.querySelector("#symbolLegendSVG");
+  const title = document.querySelector("#symbolLegendTitle");
+  if (!svg || !title) return;
 
-    const svg = document.querySelector("#symbolLegendSVG");
-    const title = document.querySelector("#symbolLegendTitle");
-    if (!svg || !title) return;
+  const year = attribute.split("_")[1];
+  title.innerHTML = `<b>Population</b><br>${year}`;
 
-    const year = attribute.split("_")[1];
-    title.innerHTML = `<b>Population</b><br>${year}`;
+  const rMax = calcPropRadius(maxVal);
+  const rMid = calcPropRadius(midVal);
+  const rMin = calcPropRadius(minVal);
 
-    const largestRadius = calcPropRadius(maxVal);
-    const cx = largestRadius + 10;
-    const baseY = largestRadius * 2 + 10;
-    const labelX = cx + largestRadius + 20;
+  // all circles share the same bottom baseline
+  const cx = rMax + 12;
+  const baseY = rMax * 2 + 12;
 
-    svg.setAttribute("width", labelX + 70);
-    svg.setAttribute("height", baseY + 10);
+  const cyMax = baseY - rMax;
+  const cyMid = baseY - rMid;
+  const cyMin = baseY - rMin;
 
-    let svgContent = "";
+  // place lines near the upper-right edge of each circle
+  const yMax = cyMax - rMax * 0.85;
+  const yMid = cyMid - rMid * 0.85;
+  const yMin = cyMin - rMin * 0.85;
 
-    circles.forEach((circle) => {
-      const r = calcPropRadius(circle.value);
-      const cy = baseY - r;
+  // compute exact circle-line intersection on the right side
+  const x1Max = cx + Math.sqrt(rMax * rMax - Math.pow(yMax - cyMax, 2));
+  const x1Mid = cx + Math.sqrt(rMid * rMid - Math.pow(yMid - cyMid, 2));
+  const x1Min = cx + Math.sqrt(rMin * rMin - Math.pow(yMin - cyMin, 2));
 
-      svgContent += `
-        <circle cx="${cx}" cy="${cy}" r="${r}"
-          fill="rgba(255,255,0,0.6)" stroke="#000" stroke-width="1"></circle>
-        <line x1="${cx + r}" y1="${cy}" x2="${labelX - 5}" y2="${cy}"
-          stroke="#666" stroke-dasharray="2,2"></line>
-        <text x="${labelX}" y="${cy + 4}" font-size="11">${circle.label}</text>
-      `;
-    });
+  // labels further right
+  const labelX = cx + rMax + 35;
 
-    svg.innerHTML = svgContent;
-  }
+  svg.setAttribute("width", 240);
+  svg.setAttribute("height", baseY + 15);
+
+  svg.innerHTML = `
+    <!-- largest circle -->
+    <circle cx="${cx}" cy="${cyMax}" r="${rMax}"
+      fill="rgba(255,255,0,0.6)" stroke="#000" stroke-width="1"></circle>
+    <line x1="${x1Max}" y1="${yMax}" x2="${labelX - 6}" y2="${yMax}"
+      stroke="#666" stroke-dasharray="2,2"></line>
+    <text x="${labelX}" y="${yMax + 4}" font-size="11">${Math.round(maxVal).toLocaleString()}</text>
+
+    <!-- middle circle -->
+    <circle cx="${cx}" cy="${cyMid}" r="${rMid}"
+      fill="rgba(255,255,0,0.6)" stroke="#000" stroke-width="1"></circle>
+    <line x1="${x1Mid}" y1="${yMid}" x2="${labelX - 6}" y2="${yMid}"
+      stroke="#666" stroke-dasharray="2,2"></line>
+    <text x="${labelX}" y="${yMid + 4}" font-size="11">${Math.round(midVal).toLocaleString()}</text>
+
+    <!-- smallest circle -->
+    <circle cx="${cx}" cy="${cyMin}" r="${rMin}"
+      fill="rgba(255,255,0,0.6)" stroke="#000" stroke-width="1"></circle>
+    <line x1="${x1Min}" y1="${yMin}" x2="${labelX - 6}" y2="${yMin}"
+      stroke="#666" stroke-dasharray="2,2"></line>
+    <text x="${labelX}" y="${yMin + 4}" font-size="11">${Math.round(minVal).toLocaleString()}</text>
+  `;
+}
 
 // Convert markers to circle markers and bind popups
 function pointToLayer(feature, latlng, attribute) {
 
-    // marker options
-    const options = {
-      fillColor: "yellow",
-      color: "#000", 
-      weight: 1,
-      opacity: 1,
-      fillOpacity: 0.8,
-    };
+  const options = {
+    fillColor: "yellow",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.6
+  };
 
-    const attValue = Number(feature.properties[attribute]);
-    options.radius = calcPropRadius(attValue);
-    // create circle marker layer
-    const layer = L.circleMarker(latlng, options);
-    const props = feature.properties;
+  const attValue = Number(feature.properties[attribute]);
+  options.radius = calcPropRadius(attValue);
 
-    // popup content
-    const year = attribute.split("_")[1];
-    let popupContent = `<p><b>MSA:</b> ${props.msa}</p>`;
-    popupContent += `<p><b>Anchor city:</b> ${props.anchor_city}</p>`;
-    popupContent += `<p><b>Population in ${year}:</b> ${Number(attValue).toLocaleString()}</p>`;
+  const layer = L.circleMarker(latlng, options);
+  const props = feature.properties;
 
-    // bind popup with offset (so it doesn't cover the circle)
-    layer.bindPopup(popupContent, {
-      offset: new L.Point(0, -options.radius),
-    });
+  const year = attribute.split("_")[1];
 
-    return layer;
-  }
+  // NEW: add long-term change for interpretation
+  const pop2015 = Number(props.population_2015);
+  const pop2021 = Number(props.population_2021);
+  const absChange = pop2021 - pop2015;
+  const pctChange = ((absChange / pop2015) * 100).toFixed(1);
+
+  let popupContent = `<p><b>MSA:</b> ${props.msa}</p>`;
+  popupContent += `<p><b>Anchor city:</b> ${props.anchor_city}</p>`;
+  popupContent += `<p><b>Population in ${year}:</b> ${attValue.toLocaleString()}</p>`;
+  popupContent += `<p><b>Change 2015–2021:</b> ${absChange.toLocaleString()} (${pctChange}%)</p>`;
+
+  layer.bindPopup(popupContent, {
+    offset: new L.Point(0, -options.radius)
+  });
+
+  return layer;
+}
 
 // Add circle markers for point features to the map based on attributes
 function createPropSymbols(data, attributes) {
+
   const attribute = attributes[0];
   minValue = calcMinValue(data, attribute);
 
   const geoLayer = L.geoJSON(data, {
-    pointToLayer: function (feature, latlng) {
+    pointToLayer: function(feature, latlng) {
       return pointToLayer(feature, latlng, attribute);
-    },
+    }
   }).addTo(map);
 
   updateLegend(attribute);
@@ -182,106 +210,123 @@ function createPropSymbols(data, attributes) {
 
   map.fitBounds(geoLayer.getBounds(), {
     padding: [20, 20],
-    maxZoom: 10,
+    maxZoom: 10
   });
 }
 
   // create slider + step buttons
-  function createSequenceControls(attributes) {
-    sequenceControl = L.control({ position: "bottomleft" });
+function createSequenceControls(attributes) {
 
-    sequenceControl.onAdd = function () {
-      const div = L.DomUtil.create("div", "sequence-control-container");
-      div.innerHTML = `
-        <div id="temporalLegend"></div>
-        <input class="range-slider" type="range">
-        <button class="step" id="reverse">Reverse</button>
-        <button class="step" id="forward">Forward</button>
-      `;
+  sequenceControl = L.control({ position: "bottomleft" });
 
-      L.DomEvent.disableClickPropagation(div);
-      L.DomEvent.disableScrollPropagation(div);
-      return div;
-    };
+  sequenceControl.onAdd = function () {
 
-    sequenceControl.addTo(map);
+    const div = L.DomUtil.create("div", "sequence-control-container");
 
-    const slider = document.querySelector(".range-slider");
-    slider.max = attributes.length - 1;
-    slider.min = 0;
-    slider.value = 0;
-    slider.step = 1;
+    div.innerHTML = `
+      <div id="temporalLegend"></div>
+      <input class="range-slider" type="range">
+      <button class="step" id="reverse">Reverse</button>
+      <button class="step" id="forward">Forward</button>
+    `;
 
-    document.querySelectorAll(".step").forEach(function (step) {
-      step.addEventListener("click", function () {
-        let index = Number(slider.value);
+    L.DomEvent.disableClickPropagation(div);
+    return div;
+  };
 
-        if (step.id === "forward") {
-          index++;
-          index = index > attributes.length - 1 ? 0 : index;
-        } else if (step.id === "reverse") {
-          index--;
-          index = index < 0 ? attributes.length - 1 : index;
-        }
+  sequenceControl.addTo(map);
 
-        slider.value = index;
-        updatePropSymbols(attributes[index], attributes);
-      });
-    });
+  const slider = document.querySelector(".range-slider");
 
-    slider.addEventListener("input", function () {
-      const index = Number(this.value);
-      updatePropSymbols(attributes[index], attributes);
-    });
-  }
+  slider.max = attributes.length - 1;
+  slider.min = 0;
+  slider.value = 0;
+  slider.step = 1;
 
-  // Update proportional symbols based on selected attribute
-  function updatePropSymbols(attribute, attributes) {
+  document.querySelectorAll(".step").forEach(function(step) {
 
-    let values = [];
-    map.eachLayer(function (layer) {
-      if (layer.feature && layer.feature.properties && layer.feature.properties[attribute] != null) {
-        const v = Number(layer.feature.properties[attribute]);
-        if (Number.isFinite(v) && v > 0) values.push(v);
+    step.addEventListener("click", function() {
+
+      let index = Number(slider.value);
+
+      if (step.id === "forward") {
+        index = (index + 1) % attributes.length;
+      } else {
+        index = (index - 1 + attributes.length) % attributes.length;
       }
+
+      slider.value = index;
+      updatePropSymbols(attributes[index]);
     });
-    minValue = Math.min(...values);
+  });
 
-    map.eachLayer(function (layer) {
-      if (layer.feature && layer.feature.properties && layer.feature.properties[attribute] != null) {
-        const props = layer.feature.properties;
+  slider.addEventListener("input", function() {
+    updatePropSymbols(attributes[this.value]);
+  });
+}
 
-        const attValue = Number(props[attribute]);
-        const radius = calcPropRadius(attValue);
-        layer.setRadius(radius);
 
-        const year = attribute.split("_")[1];
-        let popupContent = `<p><b>MSA:</b> ${props.msa}</p>`;
-        popupContent += `<p><b>Anchor city:</b> ${props.anchor_city}</p>`;
-        popupContent += `<p><b>Population in ${year}:</b> ${Number(attValue).toLocaleString()}</p>`;
+// Update proportional symbols based on selected attribute
+function updatePropSymbols(attribute) {
 
-        const popup = layer.getPopup();
-        popup.setContent(popupContent);
+  let values = [];
 
-        popup.options.offset = new L.Point(0, -radius);
-        popup.update();
-      }
-    });
-    updateLegend(attribute);
-    updateSymbolLegend(attribute);
-  }
+  map.eachLayer(function(layer) {
+    if (layer.feature && layer.feature.properties && layer.feature.properties[attribute] != null) {
+      const v = Number(layer.feature.properties[attribute]);
+      if (Number.isFinite(v) && v > 0) values.push(v);
+    }
+  });
 
-    // load data
-  function getData() {
+  minValue = Math.min(...values);
+
+  map.eachLayer(function(layer) {
+
+    if (layer.feature && layer.feature.properties && layer.feature.properties[attribute] != null) {
+
+      const props = layer.feature.properties;
+
+      const attValue = Number(props[attribute]);
+      const radius = calcPropRadius(attValue);
+
+      layer.setRadius(radius);
+
+      const year = attribute.split("_")[1];
+
+      const pop2015 = Number(props.population_2015);
+      const pop2021 = Number(props.population_2021);
+      const absChange = pop2021 - pop2015;
+      const pctChange = ((absChange / pop2015) * 100).toFixed(1);
+
+      let popupContent = `<p><b>MSA:</b> ${props.msa}</p>`;
+      popupContent += `<p><b>Anchor city:</b> ${props.anchor_city}</p>`;
+      popupContent += `<p><b>Population in ${year}:</b> ${attValue.toLocaleString()}</p>`;
+      popupContent += `<p><b>Change 2015–2021:</b> ${absChange.toLocaleString()} (${pctChange}%)</p>`;
+
+      layer.getPopup().setContent(popupContent);
+    }
+  });
+
+  updateLegend(attribute);
+  updateSymbolLegend(attribute);
+}
+
+
+// load data
+function getData() {
+
   fetch("data/cities.geojson")
-    .then((response) => response.json())
-    .then((json) => {
+    .then(res => res.json())
+    .then(json => {
+
       const attributes = processData(json);
+
       createSequenceControls(attributes);
       createSymbolLegend();
       createPropSymbols(json, attributes);
+
     })
-    .catch((err) => console.error("Failed to load GeoJSON:", err));
+    .catch(err => console.error(err));
 }
   
-  document.addEventListener("DOMContentLoaded", createMap);
+document.addEventListener("DOMContentLoaded", createMap);

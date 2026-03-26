@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic page metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>U.S. Metropolitan Population Change, 2015–2021</title>
 
+    <!-- Browser tab title -->
+    <title>U.S. Metropolitan Population Level, 2015–2021</title>
+
+    <!-- Leaflet stylesheet -->
     <link rel="stylesheet" href="lib/Leaflet/leaflet.css">
+
+    <!-- Custom page stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Page header and internal navigation -->
     <header>
-        <h1>U.S. Metropolitan Population Change, 2015–2021</h1>
+        <h1>U.S. Metropolitan Population Level, 2015–2021</h1>
         <nav>
-            <a href="#">Map</a> |
-            <a href="#">About</a> |
-            <a href="#">Sources</a>
+            <a href="#mapSection">Map</a> |
+            <a href="#aboutSection">About</a> |
+            <a href="#sourcesSection">Sources</a>
         </nav>
     </header>
 
     <main>
-        <section>
+        <!-- Introductory explanation of the map -->
+        <section id="aboutSection">
             <h2>About This Map</h2>
             <p>
                 This interactive proportional symbol map visualizes population change across the 50 largest
@@ -33,14 +41,25 @@
             </p>
         </section>
 
-        <div id="map"></div>
+        <!-- Main map container -->
+        <section id="mapSection">
+            <div id="map"></div>
+        </section>
 
     </main>
-    <footer> <p>Population estimates for U.S. metropolitan statistical areas are based on U.S. Census Bureau metropolitan population estimates. Map tiles are provided by OpenStreetMap.</p> </footer>
 
+    <!-- Data source and attribution -->
+    <footer id="sourcesSection">
+        <p>
+            Population estimates for U.S. metropolitan statistical areas are based on U.S. Census Bureau
+            metropolitan population estimates. Map tiles are provided by OpenStreetMap.
+        </p>
+    </footer>
 
+    <!-- Leaflet JavaScript library -->
     <script type="text/javascript" src="lib/Leaflet/leaflet-src.js"></script>
+
+    <!-- Main application script -->
     <script src="js/main.js" defer></script>
 </body>
 </html>
-
