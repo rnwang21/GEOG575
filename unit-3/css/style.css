@@ -5,10 +5,15 @@ body {
 }
 
 .map {
-    display: block;
-    margin: 20px auto;
+    border: medium solid #999;
+    margin: 10px 0 0 20px;
+    float: left;
     background-color: #dceeff;
-    border: 1.5px solid #999;
+}
+
+.chart {
+    float: right;
+    margin: 10px 20px 0 0;
 }
 
 .gratBackground {
@@ -18,21 +23,52 @@ body {
 .gratLines {
     fill: none;
     stroke: #b8c7d9;
-    stroke-width: 0.4px;
+    stroke-width: 0.3px;
 }
 
-.bg {
-    stroke: #666;
-    stroke-width: 0.15px;
+.regions {
+    stroke: #000;
+    stroke-width: 0.2px;
+    stroke-linecap: round;
 }
 
-.title {
-    font-size: 20px;
+.chartTitle {
+    font-family: sans-serif;
+    font-size: 1.3em;
     font-weight: bold;
-    fill: #111;
 }
 
-.info {
-    font-size: 12px;
-    fill: #333;
+.chartBackground {
+    fill: rgba(128,128,128,.15);
+}
+
+.chartFrame {
+    fill: none;
+    stroke: #999;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #999;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    fill: #666;
+}
+.bar {
+    shape-rendering: crispEdges;
+    opacity: 0.9;
+}
+
+.axisLabel {
+    font-family: sans-serif;
+    font-size: 0.85em;
+    fill: #666;
 }
