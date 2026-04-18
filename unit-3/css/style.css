@@ -1,54 +1,194 @@
+/* This grid layout arranges the page into title, description, controls, map, chart, and legend areas. */
 body {
     margin: 0;
-    font-family: sans-serif;
-    background-color: #f7f7f7;
+    padding: 16px 18px 28px 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+
+    display: grid;
+    grid-template-columns: 1.65fr 0.85fr;
+    grid-template-areas:
+        "title title"
+        "desc desc"
+        "meta controls"
+        "map chart"
+        "map legend";
+    column-gap: 20px;
+    row-gap: 10px;
+    align-items: start;
 }
 
+/* This styles the main page title so it reads like a clear heading for the application. */
+.pageTitle {
+    grid-area: title;
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #111;
+}
+
+/* This styles the short explanatory paragraph beneath the title. */
+.pageDescription {
+    grid-area: desc;
+    margin: 0;
+    max-width: 980px;
+    color: #444;
+    font-size: 0.98rem;
+    line-height: 1.25;
+}
+
+/* This note explains the current metric and reminds the reader what the data fields mean. */
+.metaNote {
+    grid-area: meta;
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.35;
+    margin-bottom: 4px;
+}
+
+/* This control container keeps the dropdown and reset button aligned in one row. */
+.controls {
+    grid-area: controls;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-self: start;
+}
+
+/* This styles the text label that sits beside the attribute dropdown. */
+.controlLabel {
+    font-weight: 600;
+    color: #333;
+}
+
+/* These shared styles make the dropdown and zoom reset button look consistent. */
+.dropdown,
+.resetZoomBtn {
+    padding: 7px 12px;
+    font-size: 1rem;
+    border: 1px solid #9c9c9c;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* This makes the map the dominant visual panel and gives it a clear frame. */
 .map {
-    border: medium solid #999;
-    margin: 10px 0 0 20px;
-    float: left;
+    grid-area: map;
+    display: block;
+    width: 100%;
+    height: auto;
     background-color: #dceeff;
+    border: 2px solid #9a9a9a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: grab;
 }
 
+/* This changes the cursor while the user is dragging the zoomable map. */
+.map:active {
+    cursor: grabbing;
+}
+
+/* This styles the histogram panel so it feels coordinated with the map. */
 .chart {
-    float: right;
-    margin: 10px 20px 0 0;
+    grid-area: chart;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+    border: 2px solid #9a9a9a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+/* This creates a compact legend box below the chart. */
+.legendBox {
+    grid-area: legend;
+    background: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    padding: 10px 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    max-width: 340px;
+}
+
+/* This styles the legend heading so users immediately know what it refers to. */
+.legendTitle {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+/* This keeps each legend row aligned as a swatch plus label. */
+.legendItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    gap: 8px;
+}
+
+/* This styles the small colored box used in each legend row. */
+.legendSwatch {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #999;
+    flex: 0 0 auto;
+}
+
+/* This styles the text beside each legend swatch. */
+.legendLabel {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* This colors the graticule background so the map reads as a geographic frame. */
 .gratBackground {
     fill: #dceeff;
 }
 
+/* These light lines provide a subtle geographic reference without dominating the map. */
 .gratLines {
     fill: none;
     stroke: #b8c7d9;
     stroke-width: 0.3px;
 }
 
+/* This styles the choropleth polygons with fine outlines so small units remain visible. */
 .regions {
     stroke: #000;
-    stroke-width: 0.2px;
+    stroke-width: 0.18px;
     stroke-linecap: round;
 }
 
+/* This styles the histogram bars with crisp rendering and slight transparency. */
+.bar {
+    shape-rendering: crispEdges;
+    opacity: 0.95;
+}
+
+/* This styles the chart title so it stands out above the plotting area. */
 .chartTitle {
-    font-family: sans-serif;
-    font-size: 1.3em;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    fill: #111;
 }
 
+/* This gives the chart interior a light shaded background. */
 .chartBackground {
-    fill: rgba(128,128,128,.15);
+    fill: rgba(128,128,128,.08);
 }
 
+/* This draws a clean outline around the chart’s inner plotting frame. */
 .chartFrame {
     fill: none;
     stroke: #999;
-    stroke-width: 2px;
+    stroke-width: 1.5px;
     shape-rendering: crispEdges;
 }
 
+/* These axis styles keep chart guides subtle and readable. */
 .axis path,
 .axis line {
     fill: none;
@@ -57,18 +197,48 @@ body {
     shape-rendering: crispEdges;
 }
 
+/* This styles the numeric tick labels on both chart axes. */
 .axis text {
-    font-family: sans-serif;
-    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
     fill: #666;
-}
-.bar {
-    shape-rendering: crispEdges;
-    opacity: 0.9;
 }
 
+/* This styles the chart axis titles for readability without overpowering the graphic. */
 .axisLabel {
-    font-family: sans-serif;
-    font-size: 0.85em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.88rem;
     fill: #666;
+}
+
+/* This floating label is used for retrieve interactions on both the map and histogram. */
+.infolabel {
+    position: absolute;
+    min-width: 170px;
+    max-width: 250px;
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid #9d9d9d;
+    border-radius: 6px;
+    pointer-events: none;
+    font-size: 0.9em;
+    color: #222;
+    line-height: 1.35;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+    z-index: 9999;
+}
+
+/* This media query stacks the panels vertically on narrower screens. */
+@media (max-width: 1180px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "desc"
+            "meta"
+            "controls"
+            "map"
+            "chart"
+            "legend";
+    }
 }
